@@ -336,7 +336,6 @@ var Filter = function (_Component) {
         _this.cities = _this.cities.bind(_this);
         _this.homeTypes = _this.homeTypes.bind(_this);
         _this.bedrooms = _this.bedrooms.bind(_this);
-        _this.elevators = _this.elevators.bind(_this);
         return _this;
     }
 
