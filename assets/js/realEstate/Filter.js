@@ -60,19 +60,7 @@ export default class Filter extends Component {
         } 
     }
 
-    elevators() {
-        if(this.props.globalState.populateFormsData.more != undefined) {
-
-            var { elevators } = this.props.globalState.populateFormsData 
-
-            console.log(elevators)
-            return elevators.map((item) => {
-                return(
-                    <option key={item} value={item}>{item}</option>
-                )
-            })
-        } 
-    }
+    
 
     render () {
         return (<section id="filter">

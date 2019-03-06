@@ -398,23 +398,6 @@ var Filter = function (_Component) {
             }
         }
     }, {
-        key: 'elevators',
-        value: function elevators() {
-            if (this.props.globalState.populateFormsData.more != undefined) {
-                var elevators = this.props.globalState.populateFormsData.elevators;
-
-
-                console.log(elevators);
-                return elevators.map(function (item) {
-                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'option',
-                        { key: item, value: item },
-                        item
-                    );
-                });
-            }
-        }
-    }, {
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
