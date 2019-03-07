@@ -11,7 +11,6 @@ export default class Filter extends Component {
         this.cities = this.cities.bind(this)
         this.homeTypes = this.homeTypes.bind(this)
         this.bedrooms = this.bedrooms.bind(this)
-        this.elevators = this.elevators.bind(this)
     }
 
     componentWillMount() {
@@ -60,6 +59,7 @@ export default class Filter extends Component {
         } 
     }
 
+    
     
 
     render () {

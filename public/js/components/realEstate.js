@@ -11,7 +11,7 @@ var listingsData = [{
     rooms: '4',
     price: '520000',
     floorSpace: '2200',
-    more: ['elevator', 'gym'],
+    more: ['gym', 'fireplace'],
     homeType: 'Condo',
     image: 'http://www.petrealtynetwork.com/wp-content/uploads/2017/11/werwerewrwer.jpg'
 }, {

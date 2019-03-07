@@ -6,6 +6,10 @@
   "author": "Chasity DeLaCruz",
   "license": "MIT",
   "homepage": "http://rocky.codingphase.com/",
+  "engines": {
+    "node": "8.11.4",
+    "npm": "6.4.1"
+  },
   "dependencies": {
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
@@ -40,6 +44,7 @@
     "webpack-stream": "^3.2.0"
   },
   "scripts": {
+    "build": "react-scripts build",
     "bundle": "./node_modules/.bin/webpack",
     "production": "./node_modules/.bin/webpack -p",
     "watch": "gulp",
