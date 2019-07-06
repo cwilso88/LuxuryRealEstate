@@ -1,19 +1,19 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 
 export default class Header extends Component {
     constructor() {
         super()
         this.state = {
-            name: 'Joe'
+            name: 'Chasity'
         }
     }
     render () {
         return (<header>
-            <div className="logo"> Luxury Estate</div>
+            <div className="logo">AtlantaLux Real Estate</div>
 
             <nav>
-                <a href="#">Create Ads</a>
+                <a href="#">Advertise</a>
                 <a href="#">About Us</a>
                 <a href="#">Log In</a>
                 <a href="#" className="register-btn">Register</a>
