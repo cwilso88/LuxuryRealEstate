@@ -33,6 +33,16 @@
         width: 100%;
     }
 
+    .more-filters {
+        .more-title {
+            padding-bottom: 10px;
+            padding-top: 30px;
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 1px solid black;
+        }
+    }
+
     .filters {
         .title {
             font-size: .9rem;
