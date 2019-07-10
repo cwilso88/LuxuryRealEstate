@@ -1,316 +1,10 @@
 webpackJsonp([0],{
 
-/***/ 100:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var listingsData = [{
-    address: '5 Peachtree St',
-    city: 'Atlanta',
-    state: 'GA',
-    rooms: '4',
-    price: '520000',
-    floorSpace: '2200',
-    more: ['gym', 'fireplace'],
-    homeType: 'Condo',
-    image: 'http://www.petrealtynetwork.com/wp-content/uploads/2017/11/werwerewrwer.jpg'
-}, {
-    address: '7413 Piedmont Ave',
-    city: 'Duluth',
-    state: 'GA',
-    rooms: '6',
-    price: '252000',
-    floorSpace: '3200',
-    more: ['elevator', 'swimming pool'],
-    homeType: 'Mansion',
-    image: 'https://i.pinimg.com/originals/49/b7/10/49b71020328e0ce6f17cd87cb3ac4f4a.jpg'
-}, {
-    address: '9008 Moreland Ave',
-    city: 'Sandy Springs',
-    state: 'GA',
-    rooms: '2',
-    price: '820000',
-    floorSpace: '1200',
-    more: ['fireplace', 'finished basement'],
-    homeType: 'Bungalow',
-    image: 'https://i.pinimg.com/originals/40/92/05/409205fb368715747947816deb3f3c77.jpg'
-}, {
-    address: '235 Roswell Road',
-    city: 'Sandy Springs',
-    state: 'GA',
-    rooms: '4',
-    price: '520000',
-    floorSpace: '2600',
-    more: ['swimming pool', 'gym'],
-    homeType: 'Ranch',
-    image: 'https://1.bp.blogspot.com/-NI8WWnABLSc/UzGQD9c0tGI/AAAAAAAALDE/LY2iBuSBibk/s1600/Stan+Dixon+painted+brick+relaxed+khaki.jpg'
-}, {
-    address: '5842 W Wesley Road',
-    city: 'Roswell',
-    state: 'GA',
-    rooms: '9',
-    price: '420000',
-    floorSpace: '3650',
-    more: ['elevator', 'gym'],
-    homeType: 'Mansion',
-    image: 'https://i.pinimg.com/originals/07/66/89/0766890adf04deeed1b3bced820ec279.jpg'
-}, {
-    address: '100 Druid Hills Road',
-    city: 'Atlanta',
-    state: 'GA',
-    rooms: '3',
-    price: '670000',
-    floorSpace: '1100',
-    more: ['finished basement', 'gym'],
-    homeType: 'Bungalow',
-    image: 'http://luxport.s3.amazonaws.com/8574/50%2BAvery%2BDrive%2BNe%2BAtlanta%2BGA%2BUSA%2B574257_001_S.jpg'
-}, {
-    address: '2000 Peachtree Road',
-    city: 'Roswell',
-    state: 'GA',
-    rooms: '4',
-    price: '520000',
-    floorSpace: '2200',
-    more: ['swimming pool', 'fireplace'],
-    homeType: 'Condo',
-    image: 'https://www.allatlantacondos.com/wp-content/uploads/2016/05/DSC_0085-690x460.jpg'
-}, {
-    address: '2905 Peachtree Battle Road',
-    city: 'Duluth',
-    state: 'GA',
-    rooms: '5',
-    price: '350000',
-    floorSpace: '2200',
-    more: ['elevator', 'finished basement'],
-    homeType: 'Condo',
-    image: 'https://i.pinimg.com/736x/d0/9a/79/d09a7905192a40d24ee28a45ebc0a180--atlanta-apartments-atlanta-condo.jpg'
-}];
-
-/* harmony default export */ __webpack_exports__["a"] = (listingsData);
-
-/***/ }),
-
-/***/ 102:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Header_js__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Filter_js__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Listings_js__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_listingsData_js__ = __webpack_require__(100);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-
-var App = function (_Component) {
-    _inherits(App, _Component);
-
-    function App() {
-        _classCallCheck(this, App);
-
-        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
-
-        _this.state = {
-            name: 'Joe',
-            listingsData: __WEBPACK_IMPORTED_MODULE_5__data_listingsData_js__["a" /* default */],
-            city: 'All',
-            homeType: 'All',
-            bedrooms: '0',
-            min_price: 0,
-            max_price: 1000000,
-            min_floor_space: 0,
-            max_floor_space: 10000,
-            elavator: false,
-            finished_basement: false,
-            gym: false,
-            swimming_pool: false,
-            fireplace: false,
-            filteredData: __WEBPACK_IMPORTED_MODULE_5__data_listingsData_js__["a" /* default */],
-            sortby: 'price-dsc',
-            populateFormsData: '',
-            view: 'box',
-            search: ''
-        };
-
-        _this.change = _this.change.bind(_this);
-        _this.filteredData = _this.filteredData.bind(_this);
-        _this.populateForms = _this.populateForms.bind(_this);
-        _this.changeView = _this.changeView.bind(_this);
-        return _this;
-    }
-
-    _createClass(App, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {
-            var listingsData = this.state.listingsData.sort(function (a, b) {
-                return a.price - b.price;
-            });
-
-            this.setState({
-                listingsData: listingsData
-            });
-        }
-    }, {
-        key: 'change',
-        value: function change(event) {
-            var _this2 = this;
-
-            var name = event.target.name;
-            var value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
-
-            this.setState(_defineProperty({}, name, value), function () {
-                console.log(_this2.state);
-                _this2.filteredData();
-            });
-        }
-    }, {
-        key: 'changeView',
-        value: function changeView(viewName) {
-            this.setState({
-                view: viewName
-            });
-        }
-    }, {
-        key: 'filteredData',
-        value: function filteredData() {
-            var _this3 = this;
-
-            var newData = this.state.listingsData.filter(function (item) {
-                return item.price >= _this3.state.min_price && item.price <= _this3.state.max_price && item.floorSpace >= _this3.state.min_floor_space && item.floorSpace <= _this3.state.max_floor_space && item.rooms >= _this3.state.bedrooms;
-            });
-
-            if (this.state.city != "All") {
-                newData = newData.filter(function (item) {
-                    return item.city == _this3.state.city;
-                });
-            }
-
-            if (this.state.homeType != "All") {
-                newData = newData.filter(function (item) {
-                    return item.homeType == _this3.state.homeType;
-                });
-            }
-
-            if (this.state.sortby == 'price-dsc') {
-                newData = newData.sort(function (a, b) {
-                    return a.price - b.price;
-                });
-            }
-
-            if (this.state.sortby == 'price-asc') {
-                newData = newData.sort(function (a, b) {
-                    return b.price - a.price;
-                });
-            }
-
-            if (this.state.search != '') {
-                newData = newData.filter(function (item) {
-                    var city = item.city.toLowerCase();
-                    var searchText = _this3.state.search.toLowerCase();
-                    var n = city.match(searchText);
-
-                    if (n != null) {
-                        return true;
-                    }
-                });
-            }
-
-            this.setState({
-                filteredData: newData
-            });
-        }
-    }, {
-        key: 'populateForms',
-        value: function populateForms() {
-            //City
-            var cities = this.state.listingsData.map(function (item) {
-                return item.city;
-            });
-
-            cities = new Set(cities);
-            cities = [].concat(_toConsumableArray(cities));
-
-            cities = cities.sort();
-
-            //homeType
-            var homeTypes = this.state.listingsData.map(function (item) {
-                return item.homeType;
-            });
-
-            homeTypes = new Set(homeTypes);
-            homeTypes = [].concat(_toConsumableArray(homeTypes));
-
-            homeTypes = homeTypes.sort();
-
-            //Bedrooms
-            var bedrooms = this.state.listingsData.map(function (item) {
-                return item.rooms;
-            });
-
-            bedrooms = new Set(bedrooms);
-            bedrooms = [].concat(_toConsumableArray(bedrooms));
-
-            bedrooms = bedrooms.sort();
-
-            this.setState({
-                populateFormsData: {
-                    homeTypes: homeTypes,
-                    bedrooms: bedrooms,
-                    cities: cities
-                }
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Header_js__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'section',
-                    { id: 'content-area' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Filter_js__["a" /* default */], { change: this.change, globalState: this.state, populateAction: this.populateForms }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Listings_js__["a" /* default */], { listingsData: this.state.filteredData, change: this.change, globalState: this.state, changeView: this.changeView })
-                )
-            );
-        }
-    }]);
-
-    return App;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-var app = document.getElementById('app');
-
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(App, null), app);
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -543,12 +237,14 @@ var Filter = function (_Component) {
 
 /***/ }),
 
-/***/ 98:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__realEstate__ = __webpack_require__(63);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -556,6 +252,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
 
 
 
@@ -594,7 +294,7 @@ var Header = function (_Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
-                        { href: '#' },
+                        { href: '/about' },
                         'About Us'
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -619,11 +319,11 @@ var Header = function (_Component) {
 
 /***/ }),
 
-/***/ 99:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -962,6 +662,314 @@ var Listings = function (_Component) {
 
 /* harmony default export */ __webpack_exports__["a"] = (Listings);
 
+/***/ }),
+
+/***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var listingsData = [{
+    address: '5 Peachtree St',
+    city: 'Atlanta',
+    state: 'GA',
+    rooms: '4',
+    price: '520000',
+    floorSpace: '2200',
+    more: ['gym', 'fireplace'],
+    homeType: 'Condo',
+    image: 'http://www.petrealtynetwork.com/wp-content/uploads/2017/11/werwerewrwer.jpg'
+}, {
+    address: '7413 Piedmont Ave',
+    city: 'Duluth',
+    state: 'GA',
+    rooms: '6',
+    price: '252000',
+    floorSpace: '3200',
+    more: ['elevator', 'swimming pool'],
+    homeType: 'Mansion',
+    image: 'https://i.pinimg.com/originals/49/b7/10/49b71020328e0ce6f17cd87cb3ac4f4a.jpg'
+}, {
+    address: '9008 Moreland Ave',
+    city: 'Sandy Springs',
+    state: 'GA',
+    rooms: '2',
+    price: '820000',
+    floorSpace: '1200',
+    more: ['fireplace', 'finished basement'],
+    homeType: 'Bungalow',
+    image: 'https://i.pinimg.com/originals/40/92/05/409205fb368715747947816deb3f3c77.jpg'
+}, {
+    address: '235 Roswell Road',
+    city: 'Sandy Springs',
+    state: 'GA',
+    rooms: '4',
+    price: '520000',
+    floorSpace: '2600',
+    more: ['swimming pool', 'gym'],
+    homeType: 'Ranch',
+    image: 'https://1.bp.blogspot.com/-NI8WWnABLSc/UzGQD9c0tGI/AAAAAAAALDE/LY2iBuSBibk/s1600/Stan+Dixon+painted+brick+relaxed+khaki.jpg'
+}, {
+    address: '5842 W Wesley Road',
+    city: 'Roswell',
+    state: 'GA',
+    rooms: '9',
+    price: '420000',
+    floorSpace: '3650',
+    more: ['elevator', 'gym'],
+    homeType: 'Mansion',
+    image: 'https://i.pinimg.com/originals/07/66/89/0766890adf04deeed1b3bced820ec279.jpg'
+}, {
+    address: '100 Druid Hills Road',
+    city: 'Atlanta',
+    state: 'GA',
+    rooms: '3',
+    price: '670000',
+    floorSpace: '1100',
+    more: ['finished basement', 'gym'],
+    homeType: 'Bungalow',
+    image: 'http://luxport.s3.amazonaws.com/8574/50%2BAvery%2BDrive%2BNe%2BAtlanta%2BGA%2BUSA%2B574257_001_S.jpg'
+}, {
+    address: '2000 Peachtree Road',
+    city: 'Roswell',
+    state: 'GA',
+    rooms: '4',
+    price: '520000',
+    floorSpace: '2200',
+    more: ['swimming pool', 'fireplace'],
+    homeType: 'Condo',
+    image: 'https://www.allatlantacondos.com/wp-content/uploads/2016/05/DSC_0085-690x460.jpg'
+}, {
+    address: '2905 Peachtree Battle Road',
+    city: 'Duluth',
+    state: 'GA',
+    rooms: '5',
+    price: '350000',
+    floorSpace: '2200',
+    more: ['elevator', 'finished basement'],
+    homeType: 'Condo',
+    image: 'https://i.pinimg.com/736x/d0/9a/79/d09a7905192a40d24ee28a45ebc0a180--atlanta-apartments-atlanta-condo.jpg'
+}];
+
+/* harmony default export */ __webpack_exports__["a"] = (listingsData);
+
+/***/ }),
+
+/***/ 63:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header_js__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Filter_js__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Listings_js__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_listingsData_js__ = __webpack_require__(110);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+var App = function (_Component) {
+    _inherits(App, _Component);
+
+    function App() {
+        _classCallCheck(this, App);
+
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+        _this.state = {
+            name: 'Joe',
+            listingsData: __WEBPACK_IMPORTED_MODULE_6__data_listingsData_js__["a" /* default */],
+            city: 'All',
+            homeType: 'All',
+            bedrooms: '0',
+            min_price: 0,
+            max_price: 1000000,
+            min_floor_space: 0,
+            max_floor_space: 10000,
+            elavator: false,
+            finished_basement: false,
+            gym: false,
+            swimming_pool: false,
+            fireplace: false,
+            filteredData: __WEBPACK_IMPORTED_MODULE_6__data_listingsData_js__["a" /* default */],
+            sortby: 'price-dsc',
+            populateFormsData: '',
+            view: 'box',
+            search: ''
+        };
+
+        _this.change = _this.change.bind(_this);
+        _this.filteredData = _this.filteredData.bind(_this);
+        _this.populateForms = _this.populateForms.bind(_this);
+        _this.changeView = _this.changeView.bind(_this);
+        return _this;
+    }
+
+    _createClass(App, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var listingsData = this.state.listingsData.sort(function (a, b) {
+                return a.price - b.price;
+            });
+
+            this.setState({
+                listingsData: listingsData
+            });
+        }
+    }, {
+        key: 'change',
+        value: function change(event) {
+            var _this2 = this;
+
+            var name = event.target.name;
+            var value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
+
+            this.setState(_defineProperty({}, name, value), function () {
+                console.log(_this2.state);
+                _this2.filteredData();
+            });
+        }
+    }, {
+        key: 'changeView',
+        value: function changeView(viewName) {
+            this.setState({
+                view: viewName
+            });
+        }
+    }, {
+        key: 'filteredData',
+        value: function filteredData() {
+            var _this3 = this;
+
+            var newData = this.state.listingsData.filter(function (item) {
+                return item.price >= _this3.state.min_price && item.price <= _this3.state.max_price && item.floorSpace >= _this3.state.min_floor_space && item.floorSpace <= _this3.state.max_floor_space && item.rooms >= _this3.state.bedrooms;
+            });
+
+            if (this.state.city != "All") {
+                newData = newData.filter(function (item) {
+                    return item.city == _this3.state.city;
+                });
+            }
+
+            if (this.state.homeType != "All") {
+                newData = newData.filter(function (item) {
+                    return item.homeType == _this3.state.homeType;
+                });
+            }
+
+            if (this.state.sortby == 'price-dsc') {
+                newData = newData.sort(function (a, b) {
+                    return a.price - b.price;
+                });
+            }
+
+            if (this.state.sortby == 'price-asc') {
+                newData = newData.sort(function (a, b) {
+                    return b.price - a.price;
+                });
+            }
+
+            if (this.state.search != '') {
+                newData = newData.filter(function (item) {
+                    var city = item.city.toLowerCase();
+                    var searchText = _this3.state.search.toLowerCase();
+                    var n = city.match(searchText);
+
+                    if (n != null) {
+                        return true;
+                    }
+                });
+            }
+
+            this.setState({
+                filteredData: newData
+            });
+        }
+    }, {
+        key: 'populateForms',
+        value: function populateForms() {
+            //City
+            var cities = this.state.listingsData.map(function (item) {
+                return item.city;
+            });
+
+            cities = new Set(cities);
+            cities = [].concat(_toConsumableArray(cities));
+
+            cities = cities.sort();
+
+            //homeType
+            var homeTypes = this.state.listingsData.map(function (item) {
+                return item.homeType;
+            });
+
+            homeTypes = new Set(homeTypes);
+            homeTypes = [].concat(_toConsumableArray(homeTypes));
+
+            homeTypes = homeTypes.sort();
+
+            //Bedrooms
+            var bedrooms = this.state.listingsData.map(function (item) {
+                return item.rooms;
+            });
+
+            bedrooms = new Set(bedrooms);
+            bedrooms = [].concat(_toConsumableArray(bedrooms));
+
+            bedrooms = bedrooms.sort();
+
+            this.setState({
+                populateFormsData: {
+                    homeTypes: homeTypes,
+                    bedrooms: bedrooms,
+                    cities: cities
+                }
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Header_js__["a" /* default */], null),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'section',
+                    { id: 'content-area' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Filter_js__["a" /* default */], { change: this.change, globalState: this.state, populateAction: this.populateForms }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Listings_js__["a" /* default */], { listingsData: this.state.filteredData, change: this.change, globalState: this.state, changeView: this.changeView })
+                )
+            );
+        }
+    }]);
+
+    return App;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+var app = document.getElementById('app');
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(App, null), app);
+
 /***/ })
 
-},[102]);
+},[63]);

@@ -5,7 +5,7 @@
   "main": "server.js",
   "author": "Chasity DeLaCruz",
   "license": "MIT",
-  "homepage": "http://rocky.codingphase.com/",
+  "homepage": "luxuryrealestate.online/",
   "engines": {
     "node": "8.11.4",
     "npm": "6.4.1"
@@ -36,6 +36,7 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
+    "react-router-dom": "^5.0.1",
     "redux": "^3.6.0",
     "sass-loader": "^6.0.3",
     "serve-static": "^1.13.2",

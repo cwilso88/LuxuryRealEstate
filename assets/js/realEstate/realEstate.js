@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Header.js'
 import Filter from './Filter.js'
 import Listings from './Listings.js'
@@ -164,4 +165,4 @@ class App extends Component {
 
 const app = document.getElementById('app')
 
-ReactDOM.render(<App />, app)
+ReactDOM.render(<App />, app);
