@@ -873,11 +873,13 @@ var App = function (_Component) {
                 });
             }
 
-            //Elevator
+            //Elavator
             if (this.state.elevator != false) {
                 newData = newData.filter(function (item) {
-                    return item.elevator == _this3.state.elevator;
+                    return item.more.includes('elevator');
                 });
+
+                console.log(newData);
             }
 
             if (this.state.homeType != "All") {
@@ -947,26 +949,11 @@ var App = function (_Component) {
 
             bedrooms = bedrooms.sort();
 
-            //Elavator
-            var elevators = this.state.listingsData.filter(function (item) {
-                return item.more.includes('elevator');
-            });
-
-            elevators = new Set(elevators);
-            elevators = [].concat(_toConsumableArray(elevators));
-
-            elevators = elevators.sort();
-
-            console.log(elevators);
-            console.log(elevators);
-            console.log(elevators);
-
             this.setState({
                 populateFormsData: {
                     homeTypes: homeTypes,
                     bedrooms: bedrooms,
-                    cities: cities,
-                    elevators: elevators
+                    cities: cities
                 }
             });
         }

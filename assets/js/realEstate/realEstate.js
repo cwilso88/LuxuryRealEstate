@@ -78,12 +78,16 @@ class App extends Component {
             })
         }
 
-        //Elevator
+        //Elavator
         if(this.state.elevator != false) {
             newData = newData.filter((item) => {
-                return item.elevator == this.state.elevator
+                return item.more.includes('elevator');
             })
+
+            console.log(newData);
         }
+        
+        
 
         if(this.state.homeType != "All") {
             newData = newData.filter((item) => {
@@ -115,10 +119,12 @@ class App extends Component {
             })
         }
 
+
         this.setState({
             filteredData: newData
         })
     }
+
 
     populateForms() {
         //City
@@ -152,26 +158,11 @@ class App extends Component {
         bedrooms = bedrooms.sort()
 
 
-        //Elavator
-        var elevators = this.state.listingsData.filter((item) => {
-            return item.more.includes('elevator');
-        })
-
-         elevators = new Set(elevators);
-         elevators = [...elevators];
-
-         elevators = elevators.sort();
-
-        console.log(elevators);
-        console.log(elevators);
-        console.log(elevators);
-
         this.setState({
             populateFormsData: {
                 homeTypes,
                 bedrooms,
                 cities,
-                elevators
             }
         })
 
