@@ -49,7 +49,7 @@ var listingsData = [
         price: '520000',
         floorSpace: '2600',
         more: [
-            'swimming pool', 'gym'
+            'swimming pool', 'gym', 'fireplace'
         ],
         homeType: 'Ranch',
         image: 'https://1.bp.blogspot.com/-NI8WWnABLSc/UzGQD9c0tGI/AAAAAAAALDE/LY2iBuSBibk/s1600/Stan+Dixon+painted+brick+relaxed+khaki.jpg'
@@ -63,7 +63,7 @@ var listingsData = [
         price: '420000',
         floorSpace: '3650',
         more: [
-            'elevator', 'gym'
+            'elevator', 'gym', 'swimming pool'
         ],
         homeType: 'Mansion',
         image: 'https://i.pinimg.com/originals/07/66/89/0766890adf04deeed1b3bced820ec279.jpg'
@@ -77,7 +77,7 @@ var listingsData = [
         price: '670000',
         floorSpace: '1100',
         more: [
-            'finished basement', 'gym'
+            'finished basement', 'gym', 'fireplace'
         ],
         homeType: 'Bungalow',
         image: 'http://luxport.s3.amazonaws.com/8574/50%2BAvery%2BDrive%2BNe%2BAtlanta%2BGA%2BUSA%2B574257_001_S.jpg'

@@ -78,6 +78,14 @@ class App extends Component {
             })
         }
 
+        
+        if(this.state.homeType != "All") {
+            newData = newData.filter((item) => {
+                return item.homeType == this.state.homeType
+            })
+        }
+
+        //More - checkboxes
         //Elavator
         if(this.state.elevator != false) {
             newData = newData.filter((item) => {
@@ -104,14 +112,25 @@ class App extends Component {
 
             console.log(newData);
         }
-        
-        
 
-        if(this.state.homeType != "All") {
+        //Gym
+        if(this.state.gym != false) {
             newData = newData.filter((item) => {
-                return item.homeType == this.state.homeType
+                return item.more.includes('gym');
             })
+
+            console.log(newData);
         }
+
+        //Fireplace
+        if(this.state.fireplace != false) {
+            newData = newData.filter((item) => {
+                return item.more.includes('fireplace');
+            })
+
+            console.log(newData);
+        }
+        //End More - checkboxes 
 
         if(this.state.sortby == 'price-dsc') {
             newData = newData.sort((a, b) => {

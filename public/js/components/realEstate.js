@@ -707,7 +707,7 @@ var listingsData = [{
     rooms: '4',
     price: '520000',
     floorSpace: '2600',
-    more: ['swimming pool', 'gym'],
+    more: ['swimming pool', 'gym', 'fireplace'],
     homeType: 'Ranch',
     image: 'https://1.bp.blogspot.com/-NI8WWnABLSc/UzGQD9c0tGI/AAAAAAAALDE/LY2iBuSBibk/s1600/Stan+Dixon+painted+brick+relaxed+khaki.jpg'
 }, {
@@ -717,7 +717,7 @@ var listingsData = [{
     rooms: '9',
     price: '420000',
     floorSpace: '3650',
-    more: ['elevator', 'gym'],
+    more: ['elevator', 'gym', 'swimming pool'],
     homeType: 'Mansion',
     image: 'https://i.pinimg.com/originals/07/66/89/0766890adf04deeed1b3bced820ec279.jpg'
 }, {
@@ -727,7 +727,7 @@ var listingsData = [{
     rooms: '3',
     price: '670000',
     floorSpace: '1100',
-    more: ['finished basement', 'gym'],
+    more: ['finished basement', 'gym', 'fireplace'],
     homeType: 'Bungalow',
     image: 'http://luxport.s3.amazonaws.com/8574/50%2BAvery%2BDrive%2BNe%2BAtlanta%2BGA%2BUSA%2B574257_001_S.jpg'
 }, {
@@ -873,6 +873,13 @@ var App = function (_Component) {
                 });
             }
 
+            if (this.state.homeType != "All") {
+                newData = newData.filter(function (item) {
+                    return item.homeType == _this3.state.homeType;
+                });
+            }
+
+            //More - checkboxes
             //Elavator
             if (this.state.elevator != false) {
                 newData = newData.filter(function (item) {
@@ -900,11 +907,24 @@ var App = function (_Component) {
                 console.log(newData);
             }
 
-            if (this.state.homeType != "All") {
+            //Gym
+            if (this.state.gym != false) {
                 newData = newData.filter(function (item) {
-                    return item.homeType == _this3.state.homeType;
+                    return item.more.includes('gym');
                 });
+
+                console.log(newData);
             }
+
+            //Fireplace
+            if (this.state.fireplace != false) {
+                newData = newData.filter(function (item) {
+                    return item.more.includes('fireplace');
+                });
+
+                console.log(newData);
+            }
+            //End More - checkboxes 
 
             if (this.state.sortby == 'price-dsc') {
                 newData = newData.sort(function (a, b) {
