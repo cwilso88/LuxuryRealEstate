@@ -69,7 +69,8 @@ class App extends Component {
 
     filteredData() {
         var newData = this.state.listingsData.filter((item) => {
-            return item.price >= this.state.min_price && item.price <= this.state.max_price && item.floorSpace >=this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space && item.rooms >= this.state.bedrooms        })
+            return item.price >= this.state.min_price && item.price <= this.state.max_price && item.floorSpace >=this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space && item.rooms >= this.state.bedrooms      
+         })
 
         if(this.state.city != "All") {
             newData = newData.filter((item) => {
@@ -79,12 +80,8 @@ class App extends Component {
 
         //Elevator
         if(this.state.elevator != false) {
-            newData = newData.filter((item) => {
-                return item.elevator == this.state.elevator
-            })
+            console.log(this.state.elevator);
         }
-
-        console.log(this.state.elevator);
 
         if(this.state.homeType != "All") {
             newData = newData.filter((item) => {
@@ -154,30 +151,30 @@ class App extends Component {
 
 
         //Elavator
-        var elevator = this.state.listingsData.filter((item) => {
+        var elevators = this.state.listingsData.filter((item) => {
             return item.more.includes('elevator');
         })
 
-         elevator = new Set(elevator);
-         elevator = [...elevator];
+         elevators = new Set(elevators);
+         elevators = [...elevators];
 
-         elevator = elevator.sort();
+         elevators = elevators.sort();
 
-        
+        console.log(elevators);
 
         this.setState({
             populateFormsData: {
                 homeTypes,
                 bedrooms,
                 cities,
-                elevator
+                elevators
             }
         })
 
     }
 
-
-    render () {
+    
+    render () { 
         return (<div>
             <Header />
             <section id="content-area">

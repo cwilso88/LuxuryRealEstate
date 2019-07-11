@@ -875,12 +875,8 @@ var App = function (_Component) {
 
             //Elevator
             if (this.state.elevator != false) {
-                newData = newData.filter(function (item) {
-                    return item.elevator == _this3.state.elevator;
-                });
+                console.log(this.state.elevator);
             }
-
-            console.log(this.state.elevator);
 
             if (this.state.homeType != "All") {
                 newData = newData.filter(function (item) {
@@ -950,21 +946,23 @@ var App = function (_Component) {
             bedrooms = bedrooms.sort();
 
             //Elavator
-            var elevator = this.state.listingsData.filter(function (item) {
+            var elevators = this.state.listingsData.filter(function (item) {
                 return item.more.includes('elevator');
             });
 
-            elevator = new Set(elevator);
-            elevator = [].concat(_toConsumableArray(elevator));
+            elevators = new Set(elevators);
+            elevators = [].concat(_toConsumableArray(elevators));
 
-            elevator = elevator.sort();
+            elevators = elevators.sort();
+
+            console.log(elevators);
 
             this.setState({
                 populateFormsData: {
                     homeTypes: homeTypes,
                     bedrooms: bedrooms,
                     cities: cities,
-                    elevator: elevator
+                    elevators: elevators
                 }
             });
         }
