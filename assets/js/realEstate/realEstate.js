@@ -207,13 +207,14 @@ class App extends Component {
 
     
     render () { 
-        return (<div>
+        return (
+        <div>
             <Header />
-            <section id="content-area">
-                <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
-                <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView} />
-            </section>
-            </div>)
+                <section id="content-area">
+                    <Filter change={this.change} globalState={this.state} populateAction={this.populateForms} />
+                    <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView} />
+                </section>
+        </div>)
     }
 }
 

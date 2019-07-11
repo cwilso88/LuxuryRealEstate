@@ -13,17 +13,21 @@ export default class Header extends Component {
         }
     }
     render () {
-        return (<header>
-            <div className="logo">
-                <img src="../../img/logo.png" alt="luxuryhomes"/>
-            </div>
-                <nav>
-                    <a href="#">Advertise</a>
-                    <a href="/about">About Us</a>
-                    <a href="#">Log In</a>
-                    <a href="#" className="register-btn">Register</a>
-                </nav>
-            </header>)
+        return (
+        <Router>
+            <header>
+                <div className="logo">
+                    <img src="../../img/logo.png" alt="luxuryhomes"/>
+                </div>
+                    <nav>
+                        <Link to="#">Advertise</Link>
+                        <Link to="/about">About Us</Link>
+                        <Link to="#">Log In</Link>
+                        <Link to="#" className="register-btn">Register</Link>
+                    </nav>
+            </header>
+        </Router>
+        )
     }
 }
 
