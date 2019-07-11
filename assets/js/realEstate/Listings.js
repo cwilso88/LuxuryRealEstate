@@ -6,7 +6,7 @@ export default class Listings extends Component {
     constructor() {
         super()
         this.state = {
-            name: 'Joe'
+            name: 'chasity'
         }
         this.loopListings = this.loopListings.bind(this)
     }

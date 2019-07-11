@@ -6,7 +6,7 @@ export default class Filter extends Component {
     constructor() {
         super()
         this.state = {
-            name: 'Joe'
+            name: 'Chasity'
         }
         this.cities = this.cities.bind(this)
         this.homeTypes = this.homeTypes.bind(this)
@@ -36,7 +36,7 @@ export default class Filter extends Component {
 
             var { homeTypes } = this.props.globalState.populateFormsData 
 
-            console.log(homeTypes)
+            
             return homeTypes.map((item) => {
                 return(
                     <option key={item} value={item}>{item}</option>
@@ -50,7 +50,7 @@ export default class Filter extends Component {
 
             var { bedrooms } = this.props.globalState.populateFormsData 
 
-            console.log(bedrooms)
+
             return bedrooms.map((item) => {
                 return(
                     <option key={item} value={item}>{item}+ BR</option>
@@ -63,7 +63,9 @@ export default class Filter extends Component {
     
 
     render () {
-        return (<section id="filter">
+        return (
+        
+        <section id="filter">
             <div className="inside">
             <h4>Filter</h4>
             <label htmlFor="city">City</label>

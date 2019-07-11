@@ -10,7 +10,7 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            name: 'Joe',
+            name: 'chat',
             listingsData,
             city: 'All',
             homeType: 'All',
@@ -48,8 +48,8 @@ class App extends Component {
     }
 
     change(event){
-            var name = event.target.name
-            var value = (event.target.type === 'checkbox') ? event.target.checked : event.target.value
+            var name = event.target.name;
+            var value = (event.target.type === 'checkbox') ? event.target.checked : event.target.value;
 
             this.setState({
             [name]: value
@@ -141,11 +141,25 @@ class App extends Component {
 
         bedrooms = bedrooms.sort()
 
+
+        //Elavator
+        var elevator = this.state.listingsData.filter((item) => {
+            return item.more.includes('elevator');
+        })
+
+         elevator = new Set(elevator);
+        // elevator = [...elevator];
+
+        // elevator = elevator.sort();
+
+        console.log(elevator);
+
         this.setState({
             populateFormsData: {
                 homeTypes,
                 bedrooms,
-                cities
+                cities,
+                elevator
             }
         })
 

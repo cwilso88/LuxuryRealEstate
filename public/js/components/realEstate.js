@@ -25,7 +25,7 @@ var Filter = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Filter.__proto__ || Object.getPrototypeOf(Filter)).call(this));
 
         _this.state = {
-            name: 'Joe'
+            name: 'Chasity'
         };
         _this.cities = _this.cities.bind(_this);
         _this.homeTypes = _this.homeTypes.bind(_this);
@@ -62,7 +62,6 @@ var Filter = function (_Component) {
                 var homeTypes = this.props.globalState.populateFormsData.homeTypes;
 
 
-                console.log(homeTypes);
                 return homeTypes.map(function (item) {
                     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'option',
@@ -79,7 +78,6 @@ var Filter = function (_Component) {
                 var bedrooms = this.props.globalState.populateFormsData.bedrooms;
 
 
-                console.log(bedrooms);
                 return bedrooms.map(function (item) {
                     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'option',
@@ -348,7 +346,7 @@ var Listings = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Listings.__proto__ || Object.getPrototypeOf(Listings)).call(this));
 
         _this.state = {
-            name: 'Joe'
+            name: 'chasity'
         };
         _this.loopListings = _this.loopListings.bind(_this);
         return _this;
@@ -801,7 +799,7 @@ var App = function (_Component) {
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
         _this.state = {
-            name: 'Joe',
+            name: 'chat',
             listingsData: __WEBPACK_IMPORTED_MODULE_6__data_listingsData_js__["a" /* default */],
             city: 'All',
             homeType: 'All',
@@ -942,11 +940,24 @@ var App = function (_Component) {
 
             bedrooms = bedrooms.sort();
 
+            //Elavator
+            var elevator = this.state.listingsData.filter(function (item) {
+                return item.more.includes('elevator');
+            });
+
+            elevator = new Set(elevator);
+            // elevator = [...elevator];
+
+            // elevator = elevator.sort();
+
+            console.log(elevator);
+
             this.setState({
                 populateFormsData: {
                     homeTypes: homeTypes,
                     bedrooms: bedrooms,
-                    cities: cities
+                    cities: cities,
+                    elevator: elevator
                 }
             });
         }
