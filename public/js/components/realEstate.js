@@ -808,7 +808,7 @@ var App = function (_Component) {
             max_price: 1000000,
             min_floor_space: 0,
             max_floor_space: 10000,
-            elavator: false,
+            elevator: false,
             finished_basement: false,
             gym: false,
             swimming_pool: false,
@@ -872,6 +872,15 @@ var App = function (_Component) {
                     return item.city == _this3.state.city;
                 });
             }
+
+            //Elevator
+            if (this.state.elevator != false) {
+                newData = newData.filter(function (item) {
+                    return item.elevator == _this3.state.elevator;
+                });
+            }
+
+            console.log(this.state.elevator);
 
             if (this.state.homeType != "All") {
                 newData = newData.filter(function (item) {
@@ -946,11 +955,9 @@ var App = function (_Component) {
             });
 
             elevator = new Set(elevator);
-            // elevator = [...elevator];
+            elevator = [].concat(_toConsumableArray(elevator));
 
-            // elevator = elevator.sort();
-
-            console.log(elevator);
+            elevator = elevator.sort();
 
             this.setState({
                 populateFormsData: {

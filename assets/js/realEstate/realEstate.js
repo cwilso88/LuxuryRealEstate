@@ -19,7 +19,7 @@ class App extends Component {
             max_price: 1000000,
             min_floor_space: 0,
             max_floor_space: 10000,
-            elavator: false,
+            elevator: false,
             finished_basement: false,
             gym: false,
             swimming_pool: false,
@@ -65,6 +65,8 @@ class App extends Component {
         })
     }
 
+    
+
     filteredData() {
         var newData = this.state.listingsData.filter((item) => {
             return item.price >= this.state.min_price && item.price <= this.state.max_price && item.floorSpace >=this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space && item.rooms >= this.state.bedrooms        })
@@ -74,6 +76,15 @@ class App extends Component {
                 return item.city == this.state.city
             })
         }
+
+        //Elevator
+        if(this.state.elevator != false) {
+            newData = newData.filter((item) => {
+                return item.elevator == this.state.elevator
+            })
+        }
+
+        console.log(this.state.elevator);
 
         if(this.state.homeType != "All") {
             newData = newData.filter((item) => {
@@ -148,11 +159,11 @@ class App extends Component {
         })
 
          elevator = new Set(elevator);
-        // elevator = [...elevator];
+         elevator = [...elevator];
 
-        // elevator = elevator.sort();
+         elevator = elevator.sort();
 
-        console.log(elevator);
+        
 
         this.setState({
             populateFormsData: {
