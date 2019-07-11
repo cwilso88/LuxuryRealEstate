@@ -86,6 +86,15 @@ class App extends Component {
 
             console.log(newData);
         }
+
+        //Swimming Pool
+        if(this.state.swimming_pool != false) {
+            newData = newData.filter((item) => {
+                return item.more.includes('swimming pool');
+            })
+
+            console.log(newData);
+        }
         
         
 

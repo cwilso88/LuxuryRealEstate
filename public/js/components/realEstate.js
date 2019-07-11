@@ -882,6 +882,15 @@ var App = function (_Component) {
                 console.log(newData);
             }
 
+            //Swimming Pool
+            if (this.state.swimming_pool != false) {
+                newData = newData.filter(function (item) {
+                    return item.more.includes('swimming pool');
+                });
+
+                console.log(newData);
+            }
+
             if (this.state.homeType != "All") {
                 newData = newData.filter(function (item) {
                     return item.homeType == _this3.state.homeType;
