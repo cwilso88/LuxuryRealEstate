@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header.js'
 import AboutUs from './AboutUs'
 import Login from './Login'
@@ -214,17 +214,22 @@ class App extends Component {
         return (
             <div>
                   <Header />
+                  <BrowserRouter>
+                    <Switch>
                     <section id="content-area">
-                    <Router>
                         <Route exact path="/" component={Filter} change={this.change} globalState={this.state} populateAction={this.populateForms}></Route>
                         <Route exact path="/" component={Listings} listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Route>
+                   
                         <Route exact path="/login" component={Login}></Route>
                         <Route exact path="/about" component={AboutUs}></Route>
                         <Route exact path="/advertise" component={Advertise}></Route>
                         <Route exact path="/register" component={Register}></Route>
-                    </Router>
+                   
                     </section>
-            </div>)
+                    </Switch>
+                    </BrowserRouter>
+            </div>
+        )
     }
 }
 
