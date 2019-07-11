@@ -20,10 +20,10 @@ export default class Header extends Component {
                     <img src="../../img/logo.png" alt="luxuryhomes"/>
                 </div>
                     <nav>
-                        <Link to="#">Advertise</Link>
+                        <Link to="/advertise">Advertise</Link>
                         <Link to="/about">About Us</Link>
-                        <Link to="#">Log In</Link>
-                        <Link to="#" className="register-btn">Register</Link>
+                        <Link to="/login">Log In</Link>
+                        <Link to="/register" className="register-btn">Register</Link>
                     </nav>
             </header>
         </Router>
