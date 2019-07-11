@@ -284,7 +284,7 @@ var Header = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'logo' },
-                    'AtlantaLux Real Estate'
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../../img/logo.png', alt: 'luxuryhomes' })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'nav',

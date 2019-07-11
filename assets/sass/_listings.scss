@@ -6,6 +6,11 @@ header {
 
     .logo {
         float: left;
+        padding-left: 10px;
+        img {
+            width: 120px;
+            height: 120px;
+        }
     }
 
     nav{

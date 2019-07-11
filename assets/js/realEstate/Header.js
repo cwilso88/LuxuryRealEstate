@@ -14,7 +14,9 @@ export default class Header extends Component {
     }
     render () {
         return (<header>
-            <div className="logo">AtlantaLux Real Estate</div>
+            <div className="logo">
+                <img src="../../img/logo.png" alt="luxuryhomes"/>
+            </div>
                 <nav>
                     <a href="#">Advertise</a>
                     <a href="/about">About Us</a>
