@@ -80,7 +80,9 @@ class App extends Component {
 
         //Elevator
         if(this.state.elevator != false) {
-            console.log(this.state.elevator);
+            newData = newData.filter((item) => {
+                return item.elevator == this.state.elevator
+            })
         }
 
         if(this.state.homeType != "All") {
@@ -160,6 +162,8 @@ class App extends Component {
 
          elevators = elevators.sort();
 
+        console.log(elevators);
+        console.log(elevators);
         console.log(elevators);
 
         this.setState({

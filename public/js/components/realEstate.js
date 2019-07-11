@@ -875,7 +875,9 @@ var App = function (_Component) {
 
             //Elevator
             if (this.state.elevator != false) {
-                console.log(this.state.elevator);
+                newData = newData.filter(function (item) {
+                    return item.elevator == _this3.state.elevator;
+                });
             }
 
             if (this.state.homeType != "All") {
@@ -955,6 +957,8 @@ var App = function (_Component) {
 
             elevators = elevators.sort();
 
+            console.log(elevators);
+            console.log(elevators);
             console.log(elevators);
 
             this.setState({
