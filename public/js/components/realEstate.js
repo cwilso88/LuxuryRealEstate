@@ -16,7 +16,7 @@ var AboutUs = function AboutUs() {
     );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (AboutUs);
+/* unused harmony default export */ var _unused_webpack_default_export = (AboutUs);
 
 /***/ }),
 
@@ -59,7 +59,7 @@ var Advertise = function (_Component) {
     return Advertise;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Advertise);
+/* unused harmony default export */ var _unused_webpack_default_export = (Advertise);
 
 /***/ }),
 
@@ -356,22 +356,22 @@ var Header = function (_Component) {
                         'nav',
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
                             { to: '/advertise' },
                             'Advertise'
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
                             { to: '/about' },
                             'About Us'
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
                             { to: '/login' },
                             'Log In'
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Link */],
+                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
                             { to: '/register', className: 'register-btn' },
                             'Register'
                         )
@@ -772,7 +772,7 @@ var Login = function (_Component) {
     return Login;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Login);
+/* unused harmony default export */ var _unused_webpack_default_export = (Login);
 
 /***/ }),
 
@@ -815,7 +815,7 @@ var Register = function (_Component) {
     return Register;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Register);
+/* unused harmony default export */ var _unused_webpack_default_export = (Register);
 
 /***/ }),
 
@@ -1172,12 +1172,8 @@ var App = function (_Component) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'section',
                             { id: 'content-area' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_8__Filter_js__["a" /* default */], change: this.change, globalState: this.state, populateAction: this.populateForms }),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_9__Listings_js__["a" /* default */], listingsData: this.state.filteredData, change: this.change, globalState: this.state, changeView: this.changeView }),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/login', component: __WEBPACK_IMPORTED_MODULE_5__Login__["a" /* default */] }),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/about', component: __WEBPACK_IMPORTED_MODULE_4__AboutUs__["a" /* default */] }),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/advertise', component: __WEBPACK_IMPORTED_MODULE_6__Advertise__["a" /* default */] }),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/register', component: __WEBPACK_IMPORTED_MODULE_7__Register__["a" /* default */] })
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__Filter_js__["a" /* default */], { path: '/', change: this.change, globalState: this.state, populateAction: this.populateForms }),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__Listings_js__["a" /* default */], { path: '/', listingsData: this.state.filteredData, change: this.change, globalState: this.state, changeView: this.changeView })
                         )
                     )
                 )

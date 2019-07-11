@@ -217,13 +217,13 @@ class App extends Component {
                   <BrowserRouter>
                     <Switch>
                     <section id="content-area">
-                        <Route exact path="/" component={Filter} change={this.change} globalState={this.state} populateAction={this.populateForms}></Route>
-                        <Route exact path="/" component={Listings} listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Route>
+                        <Filter path="/" change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
+                        <Listings path="/" listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
                    
-                        <Route exact path="/login" component={Login}></Route>
+                        {/* <Route exact path="/login" component={Login}></Route>
                         <Route exact path="/about" component={AboutUs}></Route>
                         <Route exact path="/advertise" component={Advertise}></Route>
-                        <Route exact path="/register" component={Register}></Route>
+                        <Route exact path="/register" component={Register}></Route> */}
                    
                     </section>
                     </Switch>
