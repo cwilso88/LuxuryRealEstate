@@ -891,6 +891,15 @@ var App = function (_Component) {
                 console.log(newData);
             }
 
+            //Finished Basement
+            if (this.state.finished_basement != false) {
+                newData = newData.filter(function (item) {
+                    return item.more.includes('finished basement');
+                });
+
+                console.log(newData);
+            }
+
             if (this.state.homeType != "All") {
                 newData = newData.filter(function (item) {
                     return item.homeType == _this3.state.homeType;

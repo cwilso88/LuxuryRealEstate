@@ -95,6 +95,15 @@ class App extends Component {
 
             console.log(newData);
         }
+
+        //Finished Basement
+        if(this.state.finished_basement != false) {
+            newData = newData.filter((item) => {
+                return item.more.includes('finished basement');
+            })
+
+            console.log(newData);
+        }
         
         
 
