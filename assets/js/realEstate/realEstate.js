@@ -213,16 +213,10 @@ class RealEstate extends Component {
     render () { 
         return (
             <div>
-                <Header />
-                    <section id="content-area">
-                        <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
-                        <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
-                    </section>
-                        
-                        <Route exact path="/login" component={Login}></Route>
-                        <Route exact path="/about" component={AboutUs}></Route>
-                        <Route exact path="/advertise" component={Advertise}></Route>
-                        <Route exact path="/register" component={Register}></Route>
+                <section id="content-area">
+                    <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
+                    <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
+                </section>
             </div>
         )
     }
