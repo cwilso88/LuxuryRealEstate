@@ -2,7 +2,10 @@ import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header.js'
-
+import AboutUs from './AboutUs'
+import Advertise from './Advertise'
+import Register from './Register'
+import Login from './Login'
 import Filter from './Filter.js'
 import Listings from './Listings.js'
 import listingsData from './data/listingsData.js'
@@ -210,11 +213,21 @@ class App extends Component {
     render () { 
         return (
             <div>
-                  <Header />
-                    <section id="content-area">
-                        <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
-                        <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
-                    </section>
+                <BrowserRouter>
+                    <div>
+
+                        <Header />
+                        <section id="content-area">
+                            <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
+                            <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
+                        </section>
+                        
+                        <Route exact path="/login" component={Login}></Route>
+                        <Route exact path="/about" component={AboutUs}></Route>
+                        <Route exact path="/advertise" component={Advertise}></Route>
+                        <Route exact path="/register" component={Register}></Route>
+                    </div>
+                </BrowserRouter>
             </div>
         )
     }
