@@ -10,7 +10,7 @@ import Filter from './Filter.js'
 import Listings from './Listings.js'
 import listingsData from './data/listingsData.js'
 
-class App extends Component {
+class RealEstate extends Component {
     constructor() {
         super()
         this.state = {
@@ -213,23 +213,20 @@ class App extends Component {
     render () { 
         return (
             <div>
-                <BrowserRouter>
-                    <div>
-
-                        <Header />
-                        <section id="content-area">
-                            <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
-                            <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
-                        </section>
+                <Header />
+                    <section id="content-area">
+                        <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
+                        <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
+                    </section>
                         
                         <Route exact path="/login" component={Login}></Route>
                         <Route exact path="/about" component={AboutUs}></Route>
                         <Route exact path="/advertise" component={Advertise}></Route>
                         <Route exact path="/register" component={Register}></Route>
-                    </div>
-                </BrowserRouter>
             </div>
         )
     }
 }
+
+export default RealEstate;
 

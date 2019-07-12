@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import realEstate from './realEstate';
+import realEstate from './RealEstate';
 import Header from './Header';
 import AboutUs from './pages/AboutUs'
 import Login from './pages/Login'

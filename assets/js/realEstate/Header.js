@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 
-import realEstate from './realEstate';
+import realEstate from './RealEstate';
 
 
 export default class Header extends Component {
