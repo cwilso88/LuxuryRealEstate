@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Header from './Header.js'
-import AboutUs from './AboutUs'
-import Advertise from './Advertise'
-import Register from './Register'
-import Login from './Login'
+import AboutUs from './pages/AboutUs'
+import Advertise from './pages/Advertise'
+import Register from './pages/Register'
+import Login from './pages/Login'
 import Filter from './Filter.js'
 import Listings from './Listings.js'
 import listingsData from './data/listingsData.js'
@@ -233,6 +233,3 @@ class App extends Component {
     }
 }
 
-const app = document.getElementById('app')
-
-ReactDOM.render(<App />, app);

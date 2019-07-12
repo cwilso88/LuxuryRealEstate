@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import realEstate from './realEstate';
 import Header from './Header';
-import AboutUs from './AboutUs'
-import Login from './Login'
-import Advertise from './Advertise'
-import Register from './Register'
+import AboutUs from './pages/AboutUs'
+import Login from './pages/Login'
+import Advertise from './pages/Advertise'
+import Register from './pages/Register'
 import { BrowserRouter, Route } from 'react-router-dom';
 
 export default class App extends Component {
