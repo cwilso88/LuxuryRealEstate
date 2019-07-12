@@ -2,10 +2,7 @@ import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header.js'
-import AboutUs from './AboutUs'
-import Login from './Login'
-import Advertise from './Advertise'
-import Register from './Register'
+
 import Filter from './Filter.js'
 import Listings from './Listings.js'
 import listingsData from './data/listingsData.js'
@@ -214,20 +211,10 @@ class App extends Component {
         return (
             <div>
                   <Header />
-                  <BrowserRouter>
-                    <Switch>
                     <section id="content-area">
-                        <Filter path="/" change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
-                        <Listings path="/" listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
-                   
-                        {/* <Route exact path="/login" component={Login}></Route>
-                        <Route exact path="/about" component={AboutUs}></Route>
-                        <Route exact path="/advertise" component={Advertise}></Route>
-                        <Route exact path="/register" component={Register}></Route> */}
-                   
+                        <Filter change={this.change} globalState={this.state} populateAction={this.populateForms}></Filter>
+                        <Listings listingsData={this.state.filteredData} change={this.change} globalState={this.state} changeView={this.changeView}></Listings>
                     </section>
-                    </Switch>
-                    </BrowserRouter>
             </div>
         )
     }
